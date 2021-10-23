@@ -13,7 +13,7 @@ document.getElementById("result").innerHTML = '<img id="captured_image" src="'+d
     });
 }
 console.log('ml5 version:', ml5.version);
-var classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/PWUlOYh-Z/',modelLoaded);
+var classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/PWUlOYh-Z/model.json',modelLoaded);
 function modelLoaded() {
     console.log('Model Loaded!');
 }
